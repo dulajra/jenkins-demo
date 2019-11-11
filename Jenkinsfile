@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo "${params.userName} World!"
+                echo "Hello ${params.userName}!"
+                sh 'java -version'
             }
         }
     }
